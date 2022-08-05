@@ -2,6 +2,7 @@
 import yargs from 'yargs';
 import {hideBin} from 'yargs/helpers';
 import clientAssertion from './lib/commands/client-assertion.js';
+import signJWT from './lib/commands/sign-jwt.js';
 import fs from 'fs';
 
 const packageJson = JSON.parse(fs.readFileSync(new URL('./package.json', import.meta.url), 'utf8'));
@@ -20,6 +21,7 @@ const argv = yargs(hideBin(process.argv))
       describe: 'Path to the PEM encoded private key used to sign the assertion',
       type: 'string'
     })
+    .command('sign-jwt', 'Only create a signed JWT for use with the Banno back office OAuth flow')
     .strict()
     .help()
     .argv;
@@ -27,6 +29,9 @@ const argv = yargs(hideBin(process.argv))
 switch (argv._[0].toString().toLowerCase()) {
   case 'client-assertion':
     clientAssertion(argv['client-id'], argv['private-key']).catch((e) => console.error(e));
+    break;
+  case 'sign-jwt':
+    signJWT(argv['client-id'], argv['private-key']).catch((e) => console.error(e));
     break;
   default:
     break;
