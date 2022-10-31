@@ -23,7 +23,7 @@ Create a signed JWT to use as the client_assertion.
 
 Example:
 ```text
-$ npx @jkhy/banno-client-creds-helper sign-jwt --client-id=00000000-0000-0000-0000-000000000000 --private-key=./private.pem 
+$ npx @jack-henry/banno-client-creds-helper sign-jwt --client-id=00000000-0000-0000-0000-000000000000 --private-key=./private.pem 
 ```
 
 ### client-assertion
