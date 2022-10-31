@@ -17,6 +17,15 @@ No installation steps are required.
 
 Commands currently supported by the utility.
 
+### sign-jwt
+
+Create a signed JWT to use as the client_assertion.
+
+Example:
+```text
+$ npx @jack-henry/banno-client-creds-helper sign-jwt --client-id=00000000-0000-0000-0000-000000000000 --private-key=./private.pem 
+```
+
 ### client-assertion
 
 Create a signed JWT to use as the client_assertion and obtain an access_token.
