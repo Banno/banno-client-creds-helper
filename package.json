@@ -5,7 +5,10 @@
   "main": "index.js",
   "private": false,
   "type": "module",
-  "repository": "https://github.com/Banno/banno-client-creds-helper.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Banno/banno-client-creds-helper.git"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -15,7 +18,7 @@
     "lib/**/*"
   ],
   "bin": {
-    "banno-client-creds-helper": "./index.js"
+    "banno-client-creds-helper": "index.js"
   },
   "author": "Chad Killingsworth <ckillingsworth@jackhenry.com>",
   "license": "Apache-2.0",
