@@ -1,5 +1,5 @@
 {
-  "name": "@jack-henry/banno-client-creds-helper",
+  "name": "@jack-henry/jhid-client-creds-helper",
   "version": "1.3.2",
   "description": "Helper utilities to debug connecting to Banno's Platform API using client credentials",
   "main": "index.js",
@@ -30,6 +30,6 @@
     "yargs": "^16.2.0"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   }
 }
