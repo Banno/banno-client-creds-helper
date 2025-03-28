@@ -23,7 +23,8 @@
   "author": "Chad Killingsworth <ckillingsworth@jackhenry.com>",
   "license": "Apache-2.0",
   "scripts": {
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "eslint"
   },
   "dependencies": {
     "chalk": "^4.1.0",
