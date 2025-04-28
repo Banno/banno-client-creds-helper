@@ -7,7 +7,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Banno/banno-client-creds-helper.git"
+    "url": "git+https://github.com/Banno/jhid-client-creds-helper.git"
   },
   "publishConfig": {
     "access": "public",
@@ -18,7 +18,7 @@
     "lib/**/*"
   ],
   "bin": {
-    "banno-client-creds-helper": "index.js"
+    "jhid-client-creds-helper": "index.js"
   },
   "author": "Chad Killingsworth <ckillingsworth@jackhenry.com>",
   "license": "Apache-2.0",

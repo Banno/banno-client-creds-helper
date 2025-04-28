@@ -1,4 +1,4 @@
-# @jack-henry/banno-client-creds-helper
+# @jack-henry/jhid-client-creds-helper
 
 Helper utilities for common tasks with Jack Henry ID Authentication
 
